@@ -14,7 +14,7 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-- [🚀 Live Demo](#live-demo)
+<!-- - [🚀 Live Demo](#live-demo) -->
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -77,11 +77,11 @@
 
 <!-- LIVE DEMO -->
 
-## 🚀 Live Demo <a name="live-demo"></a>
+<!-- ## 🚀 Live Demo <a name="live-demo"></a> -->
 
-(under work)
+<!-- (under work) -->
 
-<p align="right"><a href="#readme-top">Back to top</a></p>
+<!-- <p align="right"><a href="#readme-top">Back to top</a></p> -->
 
 <!-- GETTING STARTED -->
 
@@ -107,7 +107,7 @@ Clone this repository to your desired folder:
 Install this project with:
 
 ```sh
-  npm install
+  install bundler
 ```
 
 ### Usage
@@ -115,7 +115,7 @@ Install this project with:
 To run the project, execute the following command:
 
 ```sh
-  npm start
+  ruby main.rb
 ```
 
 ### Run tests
@@ -123,7 +123,7 @@ To run the project, execute the following command:
 To run tests, run the following command:
 
 ```sh
-  npm test
+  ruby test.rb
 ```
 
 ### Deployment
