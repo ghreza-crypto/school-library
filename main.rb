@@ -1,11 +1,8 @@
-require './person'
-require './trimmer_decorator'
-require './capitalize_decorator'
+require './app'
 
-person = Person.new(22, 'maximilianus')
+def main
+  app = App.new
+  app.display_menu
+end
 
-puts person.correct_name
-capitalized_person = CapitalizeDecorator.new(person)
-puts capitalized_person.correct_name
-capitalized_trimmed_person = TrimmerDecorator.new(capitalized_person)
-puts capitalized_trimmed_person.correct_name
+main
