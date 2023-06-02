@@ -11,7 +11,7 @@ class App
     @rentals = []
   end
 
-  def is_empty(list, list_name)
+  def check_length(list, list_name)
     return unless list.empty?
 
     puts "There's no #{list_name} stored yet"
@@ -61,9 +61,8 @@ class App
     end
   end
 
-
   def list_all_people
-    is_empty(@people, 'people')
+    check_length(@people, 'people')
 
     @people.each do |person|
       puts "[#{person.class}] Name: #{person.name}, ID: #{person.id}, Age: #{person.age}"
@@ -118,7 +117,7 @@ class App
 
   # Book methods
   def list_all_books
-    is_empty(@books, 'books')
+    check_length(@books, 'books')
 
     @books.each do |book|
       puts "Title: #{book.title}, Author: #{book.author}"
@@ -144,7 +143,7 @@ class App
   def create_rental
     puts 'Select a book from the following list by number: '
 
-    is_empty(@books, 'books')
+    check_length(@books, 'books')
     @books.each_with_index do |book, index|
       puts "#{index}) Title: #{book.title}, Author: #{book.author}"
     end
@@ -152,7 +151,7 @@ class App
 
     puts 'Select a person from the following list by number (Not ID): '
 
-    is_empty(@people, 'people')
+    check_length(@people, 'people')
     @people.each_with_index do |person, index|
       puts "#{index}) [#{person.class}] Name: #{person.name}, ID: #{person.id}, Age: #{person.age}"
     end
